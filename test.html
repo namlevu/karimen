@@ -31,65 +31,113 @@
       rt {
         display: none;
       }
-      body{
+      body {
         font-size: 10pt !important;
       }
     </style>
   </head>
 
   <body>
+    <select name="" id="filterType">
+      <option value="0">All</option>
+      <option value="1">Correct</option>
+      <option value="2">Incorrect</option>
+      <option value="3">Image</option>
+    </select>
+    <button onclick="filterAndShow()">Filter</button>
+
     <script>
       var container = document.createElement("div");
-      container.className = "container";
-      document.body.appendChild(container);
       var qId = 0;
+
+      document.addEventListener("DOMContentLoaded", function(event) {
+        container.className = "container";
+        document.body.appendChild(container);
+        filterAndShow();
+      });
+
       function CompareQuesion(q1, q2) {
         if (q1.correct < q2.correct) {
-          return -1;
+          return 1;
         }
         if (q1.correct > q2.correct) {
-          return 1;
+          return -1;
         }
         return 0;
       }
-      questions = questions.sort(CompareQuesion);
 
-      questions.forEach(q => {
-        if (q.id === undefined || q.id === "") {
-          qId++;
-        } else {
-          qId = q.id;
-        }
-        if (q.question !== "") {
-          var qElement = document.createElement("div");
-          qElement.id = qId;
-          qElement.className = "card";
-          qElement.style = "width: 36rem; font-size:x-large";
-          if (q.correct) {
-            qElement.style.backgroundColor = "#fdfd84";
+      function CorrectFilter(item) {
+        return item.correct;
+      }
+      function IncorrectFilter(item) {
+        return !item.correct;
+      }
+      function ImageContainFilter(item) {
+        return item.image !== undefined;
+      }
+
+      function ShowQuestion(questionList) {
+        // clear container
+        container.innerHTML = "";
+
+        questionList.forEach(q => {
+          if (q.id === undefined || q.id === "") {
+            qId++;
           } else {
-            qElement.style.backgroundColor = "#f8794a";
+            qId = q.id;
           }
+          if (q.question !== "") {
+            var qElement = document.createElement("div");
+            qElement.id = qId;
+            qElement.className = "card";
+            qElement.style = "width: 36rem; font-size:x-large";
+            if (q.correct) {
+              qElement.style.backgroundColor = "#fdfd84";
+            } else {
+              qElement.style.backgroundColor = "#f8794a";
+            }
 
-          if (q.image) {
-            var qImgElement = document.createElement("img");
-            qImgElement.src = q.image;
-            qImgElement.className = "card-img-top";
-            qElement.appendChild(qImgElement);
+            if (q.image) {
+              var qImgElement = document.createElement("img");
+              qImgElement.src = q.image;
+              qImgElement.className = "card-img-top";
+              qElement.appendChild(qImgElement);
+            }
+            var qCardBody = document.createElement("div");
+            qCardBody.className = "card-body";
+            qElement.appendChild(qCardBody);
+
+            var qTextElement = document.createElement("p");
+            qTextElement.innerHTML = q.question;
+            qTextElement.className = "card-text";
+
+            qCardBody.appendChild(qTextElement);
+            container.appendChild(document.createElement("p"));
+            container.appendChild(qElement);
           }
-          var qCardBody = document.createElement("div");
-          qCardBody.className = "card-body";
-          qElement.appendChild(qCardBody);
+        });
+      }
 
-          var qTextElement = document.createElement("p");
-          qTextElement.innerHTML = q.question;
-          qTextElement.className = "card-text";
-
-          qCardBody.appendChild(qTextElement);
-          container.appendChild(document.createElement("p"));
-          container.appendChild(qElement);
+      function filterAndShow() {
+        let fElement = document.getElementById("filterType");
+        let filterType = fElement.options[fElement.selectedIndex].value;
+        let questionList = questions.sort(CompareQuesion);
+        
+        switch (filterType) {
+          case "1":
+            ShowQuestion(questionList.filter(CorrectFilter));
+            break;
+          case "2":
+            ShowQuestion(questionList.filter(IncorrectFilter));
+            break;
+          case "3":
+            ShowQuestion(questionList.filter(ImageContainFilter));
+            break;
+          default:
+            ShowQuestion(questionList);
+            break;
         }
-      });
+      }
     </script>
   </body>
 </html>
