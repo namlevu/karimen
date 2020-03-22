@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{
+      font-size: 1.5em;
+    }
+    div.f {
+      /* false */
+      border: 1px solid rgb(161, 20, 20);
+      background-color: beige;
+      padding: 5px;
+    }
+    div.t {
+      /* true */
+      border: 1px solid rgb(6, 166, 230);
+      background-color: rgb(80, 255, 133);
+      padding: 5px;      
+    }
+    div.sum {
+      background-color: burlywood;
+      padding: 10px;
+    }
+  </style>
+  <script>
+    function showFurigana(htmlElement) {
+      var isShown = htmlElement.dataset.show;
+      var elements = document.getElementsByTagName("rt");
+
+      if(isShown){
+        for(i = 0 ; i < elements.length; i++) {
+          elements[i].style.display = "none";
+          htmlElement.dataset.show = "false";
+        }
+      }
+      else
+      {
+        for(i = 0 ; i < elements.length; i++) {
+          elements[i].style.display = "block";
+        }
+        htmlElement.dataset.show = "true";
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="showFurigana(this)" data-show="true">Show Furigana</button>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>高速道路</rb><rp>（</rp><rt>こうそくどうろ</rt><rp>）</rp></ruby>の<ruby><rb>本線</rb><rp>（</rp><rt>ほんせん</rt><rp>）</rp></ruby><ruby><rb>車道</rb><rp>（</rp><rt>しゃどう</rt><rp>）</rp></ruby>とは、<ruby><rb>通常</rb><rp>（</rp><rt>つうじょう</rt><rp>）</rp></ruby><ruby><rb>高速</rb><rp>（</rp><rt>こうそく</rt><rp>）</rp></ruby><ruby><rb>走行</rb><rp>（</rp><rt>そうこう</rt><rp>）</rp></ruby>する<ruby><rb>走行</rb><rp>（</rp><rt>そうこう</rt><rp>）</rp></ruby><ruby><rb>車線</rb><rp>（</rp><rt>しゃせん</rt><rp>）</rp></ruby>、<ruby><rb>登坂</rb><rp>（</rp><rt>とはん</rt><rp>）</rp></ruby><ruby><rb>車線</rb><rp>（</rp><rt>しゃせん</rt><rp>）</rp></ruby>、<ruby><rb>加速</rb><rp>（</rp><rt>かそく</rt><rp>）</rp></ruby><ruby><rb>車線</rb><rp>（</rp><rt>しゃせん</rt><rp>）</rp></ruby>、<ruby><rb>減速</rb><rp>（</rp><rt>げんそく</rt><rp>）</rp></ruby><ruby><rb>車線</rb><rp>（</rp><rt>しゃせん</rt><rp>）</rp></ruby>をいう。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>初心</rb><rp>（</rp><rt>しょしん</rt><rp>）</rp></ruby><ruby><rb>運転者</rb><rp>（</rp><rt>うんてんしゃ</rt><rp>）</rp></ruby>（<ruby><rb>普通</rb><rp>（</rp><rt>ふつう</rt><rp>）</rp></ruby><ruby><rb>免許</rb><rp>（</rp><rt>めんきょ</rt><rp>）</rp></ruby>や<ruby><rb>準中型免許</rb><rp>（</rp><rt>じゅんちゅうがためんきょ</rt><rp>）</rp></ruby>を<ruby><rb>受</rb><rp>（</rp><rt>う</rt><rp>）</rp></ruby>けてから1<ruby><rb>年</rb><rp>（</rp><rt>ねん</rt><rp>）</rp></ruby>を<ruby><rb>経過</rb><rp>（</rp><rt>けいか</rt><rp>）</rp></ruby>していない<ruby><rb>者</rb><rp>（</rp><rt>もの</rt><rp>）</rp></ruby>）は、「<ruby><rb>初心者</rb><rp>（</rp><rt>しょしんしゃ</rt><rp>）</rp></ruby>マーク」を<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>の<ruby><rb>前後</rb><rp>（</rp><rt>ぜんご</rt><rp>）</rp></ruby><ruby><rb>左右</rb><rp>（</rp><rt>さゆう</rt><rp>）</rp></ruby>の<ruby><rb>定</rb><rp>（</rp><rt>さだ</rt><rp>）</rp></ruby>められた<ruby><rb>位置</rb><rp>（</rp><rt>いち</rt><rp>）</rp></ruby>につけなければならない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>仮</rb><rp>（</rp><rt>かり</rt><rp>）</rp></ruby><ruby><rb>運転</rb><rp>（</rp><rt>うんてん</rt><rp>）</rp></ruby><ruby><rb>免許</rb><rp>（</rp><rt>めんきょ</rt><rp>）</rp></ruby>で<ruby><rb>練習</rb><rp>（</rp><rt>れんしゅう</rt><rp>）</rp></ruby>のために<ruby><rb>運転</rb><rp>（</rp><rt>うんてん</rt><rp>）</rp></ruby>するときは、<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>の<ruby><rb>前部</rb><rp>（</rp><rt>ぜんぶ</rt><rp>）</rp></ruby>にだけ、<ruby><rb>仮免許</rb><rp>（</rp><rt>かりめんきょ</rt><rp>）</rp></ruby><ruby><rb>練習</rb><rp>（</rp><rt>れんしゅう</rt><rp>）</rp></ruby><ruby><rb>標識</rb><rp>（</rp><rt>ひょうしき</rt><rp>）</rp></ruby>をつければよい。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>雪道</rb><rp>（</rp><rt>ゆきみち</rt><rp>）</rp></ruby>では、できるだけ<ruby><rb>前</rb><rp>（</rp><rt>まえ</rt><rp>）</rp></ruby>の<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>の<ruby><rb>通</rb><rp>（</rp><rt>とお</rt><rp>）</rp></ruby>った<ruby><rb>跡</rb><rp>（</rp><rt>あと</rt><rp>）</rp></ruby>をさけて<ruby><rb>走行</rb><rp>（</rp><rt>そうこう</rt><rp>）</rp></ruby>するのがよい。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>を<ruby><rb>選</rb><rp>（</rp><rt>えら</rt><rp>）</rp></ruby>ぶ<ruby><rb>場合</rb><rp>（</rp><rt>ばあい</rt><rp>）</rp></ruby>、<ruby><rb>直線上</rb><rp>（</rp><rt>ちょくせんじょう</rt><rp>）</rp></ruby>を<ruby><rb>押</rb><rp>（</rp><rt>お</rt><rp>）</rp></ruby>して<ruby><rb>歩</rb><rp>（</rp><rt>ある</rt><rp>）</rp></ruby>くことができれば、<ruby><rb>体格</rb><rp>（</rp><rt>たいかく</rt><rp>）</rp></ruby>に<ruby><rb>合</rb><rp>（</rp><rt>あ</rt><rp>）</rp></ruby>った<ruby><rb>車種</rb><rp>（</rp><rt>しゃしゅ</rt><rp>）</rp></ruby>といえる。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;">この<ruby><rb>標識</rb><rp>（</rp><rt>ひょうしき</rt><rp>）</rp></ruby>は、この<ruby><rb>先</rb><rp>（</rp><rt>さき</rt><rp>）</rp></ruby>で<ruby><rb>幅員</rb><rp>（</rp><rt>ふくいん</rt><rp>）</rp></ruby>が<ruby><rb>減少</rb><rp>（</rp><rt>げんしょう</rt><rp>）</rp></ruby>していることを<ruby><rb>表</rb><rp>（</rp><rt>あらわ</rt><rp>）</rp></ruby>している。</span>
+    <br>
+    <img src="https://mantensama.jp/school/manten/image/A211.gif?1584883358" alt="" srcset="">
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>駐車場</rb><rp>（</rp><rt>ちゅうしゃじょう</rt><rp>）</rp></ruby>や<ruby><rb>車庫</rb><rp>（</rp><rt>しゃこ</rt><rp>）</rp></ruby>の<ruby><rb>出入口</rb><rp>（</rp><rt>でいりぐち</rt><rp>）</rp></ruby>から3メートル<ruby><rb>以内</rb><rp>（</rp><rt>いない</rt><rp>）</rp></ruby>の<ruby><rb>場所</rb><rp>（</rp><rt>ばしょ</rt><rp>）</rp></ruby>に<ruby><rb>駐車</rb><rp>（</rp><rt>ちゅうしゃ</rt><rp>）</rp></ruby>をしてはならないが、<ruby><rb>自宅</rb><rp>（</rp><rt>じたく</rt><rp>）</rp></ruby>の<ruby><rb>車庫</rb><rp>（</rp><rt>しゃこ</rt><rp>）</rp></ruby>の<ruby><rb>出入</rb><rp>（</rp><rt>でい</rt><rp>）</rp></ruby>り<ruby><rb>口</rb><rp>（</rp><rt>ぐち</rt><rp>）</rp></ruby>であれば3メートル<ruby><rb>以内</rb><rp>（</rp><rt>いない</rt><rp>）</rp></ruby>であっても<ruby><rb>駐車</rb><rp>（</rp><rt>ちゅうしゃ</rt><rp>）</rp></ruby>してよい。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>いすで<ruby><rb>通行</rb><rp>（</rp><rt>つうこう</rt><rp>）</rp></ruby>している<ruby><rb>人</rb><rp>（</rp><rt>ひと</rt><rp>）</rp></ruby>のそばを<ruby><rb>通</rb><rp>（</rp><rt>とお</rt><rp>）</rp></ruby>るときは、<ruby><rb>一時</rb><rp>（</rp><rt>いちじ</rt><rp>）</rp></ruby><ruby><rb>停止</rb><rp>（</rp><rt>ていし</rt><rp>）</rp></ruby>か<ruby><rb>徐行</rb><rp>（</rp><rt>じょこう</rt><rp>）</rp></ruby>しなければならない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>左折</rb><rp>（</rp><rt>させつ</rt><rp>）</rp></ruby>をするとき（<ruby><rb>環状交差点</rb><rp>（</rp><rt>かんじょうこうさてん</rt><rp>）</rp></ruby>を<ruby><rb>除</rb><rp>（</rp><rt>のぞ</rt><rp>）</rp></ruby>く）に<ruby><rb>行</rb><rp>（</rp><rt>おこな</rt><rp>）</rp></ruby>う<ruby><rb>合図</rb><rp>（</rp><rt>あいず</rt><rp>）</rp></ruby>の<ruby><rb>時期</rb><rp>（</rp><rt>じき</rt><rp>）</rp></ruby>は、ハンドルを<ruby><rb>切</rb><rp>（</rp><rt>き</rt><rp>）</rp></ruby>り<ruby><rb>始</rb><rp>（</rp><rt>はじ</rt><rp>）</rp></ruby>めるときである。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;">この<ruby><rb>図</rb><rp>（</rp><rt>ず</rt><rp>）</rp></ruby>のような<ruby><rb>警察官</rb><rp>（</rp><rt>けいさつかん</rt><rp>）</rp></ruby>の<ruby><rb>灯火</rb><rp>（</rp><rt>とうか</rt><rp>）</rp></ruby>による<ruby><rb>信号</rb><rp>（</rp><rt>しんごう</rt><rp>）</rp></ruby>は、<ruby><rb>矢印</rb><rp>（</rp><rt>やじるし</rt><rp>）</rp></ruby>の<ruby><rb>方向</rb><rp>（</rp><rt>ほうこう</rt><rp>）</rp></ruby>に<ruby><rb>対</rb><rp>（</rp><rt>たい</rt><rp>）</rp></ruby>しては、<ruby><rb>信号機</rb><rp>（</rp><rt>しんごうき</rt><rp>）</rp></ruby>の<ruby><rb>青信号</rb><rp>（</rp><rt>あおしんごう</rt><rp>）</rp></ruby>と<ruby><rb>同</rb><rp>（</rp><rt>おな</rt><rp>）</rp></ruby>じ<ruby><rb>意味</rb><rp>（</rp><rt>いみ</rt><rp>）</rp></ruby>である。</span>
+    <br>
+    <img src="https://mantensama.jp/school/manten/image/C016-2.gif?1584883358" alt="" srcset="">
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>を<ruby><rb>運転中</rb><rp>（</rp><rt>うんてんちゅう</rt><rp>）</rp></ruby>、<ruby><rb>大地震</rb><rp>（</rp><rt>おおじしん</rt><rp>）</rp></ruby>の<ruby><rb>警戒</rb><rp>（</rp><rt>けいかい</rt><rp>）</rp></ruby><ruby><rb>宣言</rb><rp>（</rp><rt>せんげん</rt><rp>）</rp></ruby>が<ruby><rb>発</rb><rp>（</rp><rt>はっ</rt><rp>）</rp></ruby>せられたので、<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>を<ruby><rb>路肩</rb><rp>（</rp><rt>ろかた</rt><rp>）</rp></ruby>に<ruby><rb>止</rb><rp>（</rp><rt>と</rt><rp>）</rp></ruby>めてエンジンを<ruby><rb>切</rb><rp>（</rp><rt>き</rt><rp>）</rp></ruby>り、<ruby><rb>盗難</rb><rp>（</rp><rt>とうなん</rt><rp>）</rp></ruby><ruby><rb>予防</rb><rp>（</rp><rt>よぼう</rt><rp>）</rp></ruby>のためドアロックして<ruby><rb>避難</rb><rp>（</rp><rt>ひなん</rt><rp>）</rp></ruby>した。</span>
+  </div>
+  <div class="sum">
+    <img src="https://mantensama.jp/school/manten/image/K064.jpg?1584883358" alt="">
+    <div class="f">
+      <span class="txtMiddleL" style="font-weight:normal;"><ruby><rb>警報機</rb><rp>（</rp><rt>けいほうき</rt><rp>）</rp></ruby>が<ruby><rb>作動</rb><rp>（</rp><rt>さどう</rt><rp>）</rp></ruby>していないので、<ruby><rb>一時</rb><rp>（</rp><rt>いちじ</rt><rp>）</rp></ruby><ruby><rb>停止</rb><rp>（</rp><rt>ていし</rt><rp>）</rp></ruby>しないでそのまま<ruby><rb>前車</rb><rp>（</rp><rt>ぜんしゃ</rt><rp>）</rp></ruby>に<ruby><rb>続</rb><rp>（</rp><rt>つづ</rt><rp>）</rp></ruby>いて<ruby><rb>踏切内</rb><rp>（</rp><rt>ふみきりない</rt><rp>）</rp></ruby>に<ruby><rb>進入</rb><rp>（</rp><rt>しんにゅう</rt><rp>）</rp></ruby>する。</span>
+    </div>
+    <div class="t">
+      <span class="txtMiddleL" style="font-weight:normal;"><ruby><rb>踏切</rb><rp>（</rp><rt>ふみきり</rt><rp>）</rp></ruby>の<ruby><rb>向</rb><rp>（</rp><rt>む</rt><rp>）</rp></ruby>こう<ruby><rb>側</rb><rp>（</rp><rt>がわ</rt><rp>）</rp></ruby>が<ruby><rb>渋滞</rb><rp>（</rp><rt>じゅうたい</rt><rp>）</rp></ruby>していて<ruby><rb>踏切内</rb><rp>（</rp><rt>ふみきりない</rt><rp>）</rp></ruby>で<ruby><rb>動</rb><rp>（</rp><rt>うご</rt><rp>）</rp></ruby>きがとれなくなるかもしれないので、<ruby><rb>踏切</rb><rp>（</rp><rt>ふみきり</rt><rp>）</rp></ruby>の<ruby><rb>先</rb><rp>（</rp><rt>さき</rt><rp>）</rp></ruby>に<ruby><rb>自車</rb><rp>（</rp><rt>じしゃ</rt><rp>）</rp></ruby>の<ruby><rb>入</rb><rp>（</rp><rt>はい</rt><rp>）</rp></ruby>る<ruby><rb>余裕</rb><rp>（</rp><rt>よゆう</rt><rp>）</rp></ruby>があるか<ruby><rb>確認</rb><rp>（</rp><rt>かくにん</rt><rp>）</rp></ruby>してから<ruby><rb>発進</rb><rp>（</rp><rt>はっしん</rt><rp>）</rp></ruby>する。</span>
+    </div>
+    <div class="t">
+      <span class="txtMiddleL" style="font-weight:normal;">あまり<ruby><rb>左</rb><rp>（</rp><rt>ひだり</rt><rp>）</rp></ruby>に<ruby><rb>寄</rb><rp>（</rp><rt>よ</rt><rp>）</rp></ruby>ると<ruby><rb>落</rb><rp>（</rp><rt>らく</rt><rp>）</rp></ruby><ruby><rb>輪</rb><rp>（</rp><rt>りん</rt><rp>）</rp></ruby>するかもしれないので､<ruby><rb>対向車</rb><rp>（</rp><rt>たいこうしゃ</rt><rp>）</rp></ruby>との<ruby><rb>間隔</rb><rp>（</rp><rt>かんかく</rt><rp>）</rp></ruby>に<ruby><rb>注意</rb><rp>（</rp><rt>ちゅうい</rt><rp>）</rp></ruby>しつつ、やや<ruby><rb>中央</rb><rp>（</rp><rt>ちゅうおう</rt><rp>）</rp></ruby><ruby><rb>寄</rb><rp>（</rp><rt>よ</rt><rp>）</rp></ruby>りを<ruby><rb>走行</rb><rp>（</rp><rt>そうこう</rt><rp>）</rp></ruby>する｡</span>
+    </div>
+  </div> <!-- end sum -->
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>高速道路</rb><rp>（</rp><rt>こうそくどうろ</rt><rp>）</rp></ruby>での<ruby><rb>車間距離</rb><rp>（</rp><rt>しゃかんきょり</rt><rp>）</rp></ruby>は、<ruby><rb>乾</rb><rp>（</rp><rt>かわ</rt><rp>）</rp></ruby>いた<ruby><rb>路面</rb><rp>（</rp><rt>ろめん</rt><rp>）</rp></ruby>のときと<ruby><rb>雨</rb><rp>（</rp><rt>あめ</rt><rp>）</rp></ruby>などでぬれているときは<ruby><rb>同</rb><rp>（</rp><rt>おな</rt><rp>）</rp></ruby>じでよい。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>夜間</rb><rp>（</rp><rt>やかん</rt><rp>）</rp></ruby>は<ruby><rb>速度</rb><rp>（</rp><rt>そくど</rt><rp>）</rp></ruby><ruby><rb>感</rb><rp>（</rp><rt>かん</rt><rp>）</rp></ruby>が<ruby><rb>鈍</rb><rp>（</rp><rt>にぶ</rt><rp>）</rp></ruby>ることはないので、<ruby><rb>特</rb><rp>（</rp><rt>とく</rt><rp>）</rp></ruby>に<ruby><rb>速度</rb><rp>（</rp><rt>そくど</rt><rp>）</rp></ruby><ruby><rb>超過</rb><rp>（</rp><rt>ちょうか</rt><rp>）</rp></ruby>になりやすいとはいえない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>対向車</rb><rp>（</rp><rt>たいこうしゃ</rt><rp>）</rp></ruby>と<ruby><rb>正面</rb><rp>（</rp><rt>しょうめん</rt><rp>）</rp></ruby><ruby><rb>衝突</rb><rp>（</rp><rt>しょうとつ</rt><rp>）</rp></ruby>のおそれが<ruby><rb>生</rb><rp>（</rp><rt>しょう</rt><rp>）</rp></ruby>じたときは、<ruby><rb>警</rb><rp>（</rp><rt>けい</rt><rp>）</rp></ruby><ruby><rb>音</rb><rp>（</rp><rt>おん</rt><rp>）</rp></ruby><ruby><rb>器</rb><rp>（</rp><rt>き</rt><rp>）</rp></ruby>とブレーキを<ruby><rb>同時</rb><rp>（</rp><rt>どうじ</rt><rp>）</rp></ruby>に<ruby><rb>使</rb><rp>（</rp><rt>つか</rt><rp>）</rp></ruby>い、できる<ruby><rb>限</rb><rp>（</rp><rt>かぎ</rt><rp>）</rp></ruby>り<ruby><rb>左側</rb><rp>（</rp><rt>ひだりがわ</rt><rp>）</rp></ruby>によけ、<ruby><rb>衝突</rb><rp>（</rp><rt>しょうとつ</rt><rp>）</rp></ruby>の<ruby><rb>寸前</rb><rp>（</rp><rt>すんぜん</rt><rp>）</rp></ruby>まであきらめないで、<ruby><rb>少</rb><rp>（</rp><rt>すこ</rt><rp>）</rp></ruby>しでもブレーキとハンドルでかわすようにするが、そのときは<ruby><rb>道路外</rb><rp>（</rp><rt>どうろがい</rt><rp>）</rp></ruby>に<ruby><rb>出</rb><rp>（</rp><rt>で</rt><rp>）</rp></ruby>ないようにしなければならない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>で<ruby><rb>曲</rb><rp>（</rp><rt>ま</rt><rp>）</rp></ruby>がり<ruby><rb>角</rb><rp>（</rp><rt>かど</rt><rp>）</rp></ruby>やカーブを<ruby><rb>走行</rb><rp>（</rp><rt>そうこう</rt><rp>）</rp></ruby>するときは、ブレーキをかけながら<ruby><rb>速度</rb><rp>（</rp><rt>そくど</rt><rp>）</rp></ruby>を<ruby><rb>調節</rb><rp>（</rp><rt>ちょうせつ</rt><rp>）</rp></ruby>して<ruby><rb>曲</rb><rp>（</rp><rt>ま</rt><rp>）</rp></ruby>がるとよい。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>車両</rb><rp>（</rp><rt>しゃりょう</rt><rp>）</rp></ruby><ruby><rb>通行</rb><rp>（</rp><rt>つうこう</rt><rp>）</rp></ruby><ruby><rb>帯</rb><rp>（</rp><rt>たい</rt><rp>）</rp></ruby>のある<ruby><rb>道路</rb><rp>（</rp><rt>どうろ</rt><rp>）</rp></ruby>では、<ruby><rb>常</rb><rp>（</rp><rt>つね</rt><rp>）</rp></ruby>にあいている<ruby><rb>車両</rb><rp>（</rp><rt>しゃりょう</rt><rp>）</rp></ruby><ruby><rb>通行</rb><rp>（</rp><rt>つうこう</rt><rp>）</rp></ruby><ruby><rb>帯</rb><rp>（</rp><rt>たい</rt><rp>）</rp></ruby>に<ruby><rb>移</rb><rp>（</rp><rt>うつ</rt><rp>）</rp></ruby>りながら<ruby><rb>通行</rb><rp>（</rp><rt>つうこう</rt><rp>）</rp></ruby>することが<ruby><rb>交通</rb><rp>（</rp><rt>こうつう</rt><rp>）</rp></ruby>の<ruby><rb>円滑</rb><rp>（</rp><rt>えんかつ</rt><rp>）</rp></ruby>と<ruby><rb>危険</rb><rp>（</rp><rt>きけん</rt><rp>）</rp></ruby><ruby><rb>防止</rb><rp>（</rp><rt>ぼうし</rt><rp>）</rp></ruby>になる。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>自動車</rb><rp>（</rp><rt>じどうしゃ</rt><rp>）</rp></ruby>や<ruby><rb>原動機</rb><rp>（</rp><rt>げんどうき</rt><rp>）</rp></ruby><ruby><rb>付</rb><rp>（</rp><rt>つき</rt><rp>）</rp></ruby><ruby><rb>自転車</rb><rp>（</rp><rt>じてんしゃ</rt><rp>）</rp></ruby>は、<ruby><rb>道路</rb><rp>（</rp><rt>どうろ</rt><rp>）</rp></ruby>に<ruby><rb>面</rb><rp>（</rp><rt>めん</rt><rp>）</rp></ruby>した<ruby><rb>場所</rb><rp>（</rp><rt>ばしょ</rt><rp>）</rp></ruby>に<ruby><rb>出入</rb><rp>（</rp><rt>でい</rt><rp>）</rp></ruby>りするために<ruby><rb>横切</rb><rp>（</rp><rt>よこぎ</rt><rp>）</rp></ruby>る<ruby><rb>場合</rb><rp>（</rp><rt>ばあい</rt><rp>）</rp></ruby>のほかは、<ruby><rb>歩道</rb><rp>（</rp><rt>ほどう</rt><rp>）</rp></ruby>や<ruby><rb>路側帯</rb><rp>（</rp><rt>ろそくたい</rt><rp>）</rp></ruby>や<ruby><rb>自転車道</rb><rp>（</rp><rt>じてんしゃどう</rt><rp>）</rp></ruby>などを<ruby><rb>通行</rb><rp>（</rp><rt>つうこう</rt><rp>）</rp></ruby>してはならない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>雪道</rb><rp>（</rp><rt>ゆきみち</rt><rp>）</rp></ruby>や<ruby><rb>凍</rb><rp>（</rp><rt>こお</rt><rp>）</rp></ruby>っている<ruby><rb>道路</rb><rp>（</rp><rt>どうろ</rt><rp>）</rp></ruby>では、スタッドレスタイヤやタイヤチェーンなど、<ruby><rb>雪道</rb><rp>（</rp><rt>ゆきみち</rt><rp>）</rp></ruby><ruby><rb>用</rb><rp>（</rp><rt>よう</rt><rp>）</rp></ruby>タイヤをつけていれば、<ruby><rb>夏道</rb><rp>（</rp><rt>なつみち</rt><rp>）</rp></ruby>の<ruby><rb>運転</rb><rp>（</rp><rt>うんてん</rt><rp>）</rp></ruby>と<ruby><rb>同</rb><rp>（</rp><rt>おな</rt><rp>）</rp></ruby>じでよい。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>後方</rb><rp>（</rp><rt>こうほう</rt><rp>）</rp></ruby>から<ruby><rb>追越</rb><rp>（</rp><rt>おいこ</rt><rp>）</rp></ruby>そうとしている<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>が<ruby><rb>自分</rb><rp>（</rp><rt>じぶん</rt><rp>）</rp></ruby>の<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>より<ruby><rb>最高速度</rb><rp>（</rp><rt>さいこうそくど</rt><rp>）</rp></ruby>（<ruby><rb>法定速度</rb><rp>（</rp><rt>ほうていそくど</rt><rp>）</rp></ruby>）の<ruby><rb>低</rb><rp>（</rp><rt>ひく</rt><rp>）</rp></ruby>い<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>であれば、<ruby><rb>進路</rb><rp>（</rp><rt>しんろ</rt><rp>）</rp></ruby>をゆずらなくてもよい。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;">バッテリー<ruby><rb>液</rb><rp>（</rp><rt>えき</rt><rp>）</rp></ruby>は、<ruby><rb>規定</rb><rp>（</rp><rt>きてい</rt><rp>）</rp></ruby>の<ruby><rb>量</rb><rp>（</rp><rt>りょう</rt><rp>）</rp></ruby>にしておかないと、バッテリーが<ruby><rb>上</rb><rp>（</rp><rt>あ</rt><rp>）</rp></ruby>がりやすくなる。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>故障車</rb><rp>（</rp><rt>こしょうしゃ</rt><rp>）</rp></ruby>をロープでけん<ruby><rb>引</rb><rp>（</rp><rt>いん</rt><rp>）</rp></ruby>するときは、その<ruby><rb>間</rb><rp>（</rp><rt>あいだ</rt><rp>）</rp></ruby>を5メートル<ruby><rb>以内</rb><rp>（</rp><rt>いない</rt><rp>）</rp></ruby>にし、ロープの<ruby><rb>中央</rb><rp>（</rp><rt>ちゅうおう</rt><rp>）</rp></ruby>に0.3メートル<ruby><rb>平方</rb><rp>（</rp><rt>へいほう</rt><rp>）</rp></ruby><ruby><rb>以上</rb><rp>（</rp><rt>いじょう</rt><rp>）</rp></ruby>の<ruby><rb>赤</rb><rp>（</rp><rt>あか</rt><rp>）</rp></ruby>い<ruby><rb>布</rb><rp>（</rp><rt>ぬの</rt><rp>）</rp></ruby>をつけなければならない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>大型</rb><rp>（</rp><rt>おおがた</rt><rp>）</rp></ruby><ruby><rb>二輪</rb><rp>（</rp><rt>にりん</rt><rp>）</rp></ruby><ruby><rb>免許</rb><rp>（</rp><rt>めんきょ</rt><rp>）</rp></ruby>を<ruby><rb>受</rb><rp>（</rp><rt>う</rt><rp>）</rp></ruby>けて1<ruby><rb>年</rb><rp>（</rp><rt>ねん</rt><rp>）</rp></ruby>を<ruby><rb>経過</rb><rp>（</rp><rt>けいか</rt><rp>）</rp></ruby>していない<ruby><rb>者</rb><rp>（</rp><rt>もの</rt><rp>）</rp></ruby>（<ruby><rb>普通</rb><rp>（</rp><rt>ふつう</rt><rp>）</rp></ruby><ruby><rb>二輪</rb><rp>（</rp><rt>にりん</rt><rp>）</rp></ruby><ruby><rb>免許</rb><rp>（</rp><rt>めんきょ</rt><rp>）</rp></ruby>を<ruby><rb>受</rb><rp>（</rp><rt>う</rt><rp>）</rp></ruby>けていない<ruby><rb>者</rb><rp>（</rp><rt>もの</rt><rp>）</rp></ruby>）は、<ruby><rb>大型</rb><rp>（</rp><rt>おおがた</rt><rp>）</rp></ruby><ruby><rb>自動</rb><rp>（</rp><rt>じどう</rt><rp>）</rp></ruby><ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>の<ruby><rb>二人乗</rb><rp>（</rp><rt>ふたりの</rt><rp>）</rp></ruby>りはできないが、<ruby><rb>普通</rb><rp>（</rp><rt>ふつう</rt><rp>）</rp></ruby><ruby><rb>自動</rb><rp>（</rp><rt>じどう</rt><rp>）</rp></ruby><ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>の<ruby><rb>二人乗</rb><rp>（</rp><rt>ふたりの</rt><rp>）</rp></ruby>りはできる。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>警察署</rb><rp>（</rp><rt>けいさつしょ</rt><rp>）</rp></ruby>や<ruby><rb>消防署</rb><rp>（</rp><rt>しょうぼうしょ</rt><rp>）</rp></ruby>などの<ruby><rb>前</rb><rp>（</rp><rt>まえ</rt><rp>）</rp></ruby>に<ruby><rb>停止</rb><rp>（</rp><rt>ていし</rt><rp>）</rp></ruby><ruby><rb>禁止</rb><rp>（</rp><rt>きんし</rt><rp>）</rp></ruby><ruby><rb>部分</rb><rp>（</rp><rt>ぶぶん</rt><rp>）</rp></ruby>の<ruby><rb>標示</rb><rp>（</rp><rt>ひょうじ</rt><rp>）</rp></ruby>がなされていても、それは<ruby><rb>緊急時</rb><rp>（</rp><rt>きんきゅうじ</rt><rp>）</rp></ruby>の<ruby><rb>標示</rb><rp>（</rp><rt>ひょうじ</rt><rp>）</rp></ruby>であるから、<ruby><rb>緊急時</rb><rp>（</rp><rt>きんきゅうじ</rt><rp>）</rp></ruby><ruby><rb>以外</rb><rp>（</rp><rt>いがい</rt><rp>）</rp></ruby>であれば<ruby><rb>標示</rb><rp>（</rp><rt>ひょうじ</rt><rp>）</rp></ruby><ruby><rb>部分</rb><rp>（</rp><rt>ぶぶん</rt><rp>）</rp></ruby>に<ruby><rb>停止</rb><rp>（</rp><rt>ていし</rt><rp>）</rp></ruby>してもかまわない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>暑</rb><rp>（</rp><rt>あつ</rt><rp>）</rp></ruby>い<ruby><rb>季節</rb><rp>（</rp><rt>きせつ</rt><rp>）</rp></ruby>に<ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>を<ruby><rb>運転</rb><rp>（</rp><rt>うんてん</rt><rp>）</rp></ruby>するときは、<ruby><rb>体</rb><rp>（</rp><rt>からだ</rt><rp>）</rp></ruby>の<ruby><rb>露出</rb><rp>（</rp><rt>ろしゅつ</rt><rp>）</rp></ruby><ruby><rb>部分</rb><rp>（</rp><rt>ぶぶん</rt><rp>）</rp></ruby>の<ruby><rb>多</rb><rp>（</rp><rt>おお</rt><rp>）</rp></ruby>い<ruby><rb>方</rb><rp>（</rp><rt>ほう</rt><rp>）</rp></ruby>が<ruby><rb>疲労</rb><rp>（</rp><rt>ひろう</rt><rp>）</rp></ruby>をとり、<ruby><rb>安全</rb><rp>（</rp><rt>あんぜん</rt><rp>）</rp></ruby><ruby><rb>運転</rb><rp>（</rp><rt>うんてん</rt><rp>）</rp></ruby>につながる。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;">ほかの<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>をけん<ruby><rb>引</rb><rp>（</rp><rt>いん</rt><rp>）</rp></ruby>しているため<ruby><rb>時速</rb><rp>（</rp><rt>じそく</rt><rp>）</rp></ruby>50キロメートル<ruby><rb>以上</rb><rp>（</rp><rt>いじょう</rt><rp>）</rp></ruby>の<ruby><rb>速度</rb><rp>（</rp><rt>そくど</rt><rp>）</rp></ruby>で<ruby><rb>走</rb><rp>（</rp><rt>はし</rt><rp>）</rp></ruby>ることのできない<ruby><rb>自動車</rb><rp>（</rp><rt>じどうしゃ</rt><rp>）</rp></ruby>は、<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>の<ruby><rb>特性上</rb><rp>（</rp><rt>とくせいじょう</rt><rp>）</rp></ruby>、<ruby><rb>高速</rb><rp>（</rp><rt>こうそく</rt><rp>）</rp></ruby><ruby><rb>自動車</rb><rp>（</rp><rt>じどうしゃ</rt><rp>）</rp></ruby><ruby><rb>国道</rb><rp>（</rp><rt>こくどう</rt><rp>）</rp></ruby>を<ruby><rb>通行</rb><rp>（</rp><rt>つうこう</rt><rp>）</rp></ruby>することができない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>交通量</rb><rp>（</rp><rt>こうつうりょう</rt><rp>）</rp></ruby>が<ruby><rb>少</rb><rp>（</rp><rt>すく</rt><rp>）</rp></ruby>ないときは、ほかの<ruby><rb>歩行者</rb><rp>（</rp><rt>ほこうしゃ</rt><rp>）</rp></ruby>や<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>に<ruby><rb>迷惑</rb><rp>（</rp><rt>めいわく</rt><rp>）</rp></ruby>をかけることはないから、<ruby><rb>自分</rb><rp>（</rp><rt>じぶん</rt><rp>）</rp></ruby>の<ruby><rb>都合</rb><rp>（</rp><rt>つごう</rt><rp>）</rp></ruby>だけを<ruby><rb>考</rb><rp>（</rp><rt>かんが</rt><rp>）</rp></ruby>えて<ruby><rb>運転</rb><rp>（</rp><rt>うんてん</rt><rp>）</rp></ruby>してもよい。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>濃霧</rb><rp>（</rp><rt>のうむ</rt><rp>）</rp></ruby>で<ruby><rb>視界</rb><rp>（</rp><rt>しかい</rt><rp>）</rp></ruby>が<ruby><rb>悪</rb><rp>（</rp><rt>わる</rt><rp>）</rp></ruby>いときは、<ruby><rb>前照灯</rb><rp>（</rp><rt>ぜんしょうとう</rt><rp>）</rp></ruby>を<ruby><rb>早</rb><rp>（</rp><rt>はや</rt><rp>）</rp></ruby>めに<ruby><rb>点灯</rb><rp>（</rp><rt>てんとう</rt><rp>）</rp></ruby>し、まわりの<ruby><rb>運転者</rb><rp>（</rp><rt>うんてんしゃ</rt><rp>）</rp></ruby>に<ruby><rb>自分</rb><rp>（</rp><rt>じぶん</rt><rp>）</rp></ruby>の<ruby><rb>存在</rb><rp>（</rp><rt>そんざい</rt><rp>）</rp></ruby>を<ruby><rb>知</rb><rp>（</rp><rt>し</rt><rp>）</rp></ruby>らせるとともに、<ruby><rb>危険</rb><rp>（</rp><rt>きけん</rt><rp>）</rp></ruby>をさけるためやむを<ruby><rb>得</rb><rp>（</rp><rt>え</rt><rp>）</rp></ruby>ない<ruby><rb>場合</rb><rp>（</rp><rt>ばあい</rt><rp>）</rp></ruby>には、<ruby><rb>必要</rb><rp>（</rp><rt>ひつよう</rt><rp>）</rp></ruby>に<ruby><rb>応</rb><rp>（</rp><rt>おう</rt><rp>）</rp></ruby>じて<ruby><rb>警</rb><rp>（</rp><rt>けい</rt><rp>）</rp></ruby><ruby><rb>音</rb><rp>（</rp><rt>おん</rt><rp>）</rp></ruby><ruby><rb>器</rb><rp>（</rp><rt>き</rt><rp>）</rp></ruby>を<ruby><rb>使用</rb><rp>（</rp><rt>しよう</rt><rp>）</rp></ruby>するとよい。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>自動車</rb><rp>（</rp><rt>じどうしゃ</rt><rp>）</rp></ruby>の<ruby><rb>保有者</rb><rp>（</rp><rt>ほゆうしゃ</rt><rp>）</rp></ruby>は、<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>の<ruby><rb>使用</rb><rp>（</rp><rt>しよう</rt><rp>）</rp></ruby>の<ruby><rb>本拠</rb><rp>（</rp><rt>ほんきょ</rt><rp>）</rp></ruby>の<ruby><rb>位置</rb><rp>（</rp><rt>いち</rt><rp>）</rp></ruby>から2キロメートル<ruby><rb>以内</rb><rp>（</rp><rt>いない</rt><rp>）</rp></ruby>の、<ruby><rb>道路</rb><rp>（</rp><rt>どうろ</rt><rp>）</rp></ruby><ruby><rb>以外</rb><rp>（</rp><rt>いがい</rt><rp>）</rp></ruby>の<ruby><rb>場所</rb><rp>（</rp><rt>ばしょ</rt><rp>）</rp></ruby>に<ruby><rb>保管</rb><rp>（</rp><rt>ほかん</rt><rp>）</rp></ruby><ruby><rb>場所</rb><rp>（</rp><rt>ばしょ</rt><rp>）</rp></ruby>を<ruby><rb>確保</rb><rp>（</rp><rt>かくほ</rt><rp>）</rp></ruby>しなければならない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>普通</rb><rp>（</rp><rt>ふつう</rt><rp>）</rp></ruby><ruby><rb>自動</rb><rp>（</rp><rt>じどう</rt><rp>）</rp></ruby><ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>で<ruby><rb>標識</rb><rp>（</rp><rt>ひょうしき</rt><rp>）</rp></ruby>などにより<ruby><rb>最高</rb><rp>（</rp><rt>さいこう</rt><rp>）</rp></ruby><ruby><rb>速度</rb><rp>（</rp><rt>そくど</rt><rp>）</rp></ruby>が<ruby><rb>時速</rb><rp>（</rp><rt>じそく</rt><rp>）</rp></ruby>40キロメートルと<ruby><rb>制限</rb><rp>（</rp><rt>せいげん</rt><rp>）</rp></ruby>されているときは、ヘルメットをかぶらなくてもよい。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>助手席</rb><rp>（</rp><rt>じょしゅせき</rt><rp>）</rp></ruby><ruby><rb>用</rb><rp>（</rp><rt>よう</rt><rp>）</rp></ruby>のエアバッグを<ruby><rb>備</rb><rp>（</rp><rt>そな</rt><rp>）</rp></ruby>えている<ruby><rb>自動車</rb><rp>（</rp><rt>じどうしゃ</rt><rp>）</rp></ruby>でチャイルドシートを<ruby><rb>使用</rb><rp>（</rp><rt>しよう</rt><rp>）</rp></ruby>する<ruby><rb>場合</rb><rp>（</rp><rt>ばあい</rt><rp>）</rp></ruby>は、なるべく<ruby><rb>後部</rb><rp>（</rp><rt>こうぶ</rt><rp>）</rp></ruby><ruby><rb>座席</rb><rp>（</rp><rt>ざせき</rt><rp>）</rp></ruby>で<ruby><rb>使用</rb><rp>（</rp><rt>しよう</rt><rp>）</rp></ruby>するとよい。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>大型</rb><rp>（</rp><rt>おおがた</rt><rp>）</rp></ruby><ruby><rb>自動</rb><rp>（</rp><rt>じどう</rt><rp>）</rp></ruby><ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>や<ruby><rb>原動機</rb><rp>（</rp><rt>げんどうき</rt><rp>）</rp></ruby><ruby><rb>付</rb><rp>（</rp><rt>つき</rt><rp>）</rp></ruby><ruby><rb>自転車</rb><rp>（</rp><rt>じてんしゃ</rt><rp>）</rp></ruby>の<ruby><rb>荷台</rb><rp>（</rp><rt>にだい</rt><rp>）</rp></ruby>には、どちらも60キログラムまで<ruby><rb>荷物</rb><rp>（</rp><rt>にもつ</rt><rp>）</rp></ruby>を<ruby><rb>積</rb><rp>（</rp><rt>つ</rt><rp>）</rp></ruby>むことができる。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>雨降</rb><rp>（</rp><rt>あめふ</rt><rp>）</rp></ruby>りの<ruby><rb>路面</rb><rp>（</rp><rt>ろめん</rt><rp>）</rp></ruby>を<ruby><rb>高速</rb><rp>（</rp><rt>こうそく</rt><rp>）</rp></ruby>で<ruby><rb>走行</rb><rp>（</rp><rt>そうこう</rt><rp>）</rp></ruby>すると、<ruby><rb>路面</rb><rp>（</rp><rt>ろめん</rt><rp>）</rp></ruby>とタイヤの<ruby><rb>間</rb><rp>（</rp><rt>あいだ</rt><rp>）</rp></ruby>に<ruby><rb>水</rb><rp>（</rp><rt>みず</rt><rp>）</rp></ruby>の<ruby><rb>膜</rb><rp>（</rp><rt>まく</rt><rp>）</rp></ruby>ができてタイヤが<ruby><rb>浮</rb><rp>（</rp><rt>う</rt><rp>）</rp></ruby>いた<ruby><rb>状態</rb><rp>（</rp><rt>じょうたい</rt><rp>）</rp></ruby>になり、ハンドル<ruby><rb>操作</rb><rp>（</rp><rt>そうさ</rt><rp>）</rp></ruby>がきかなくなることがある。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>進路</rb><rp>（</rp><rt>しんろ</rt><rp>）</rp></ruby><ruby><rb>変更</rb><rp>（</rp><rt>へんこう</rt><rp>）</rp></ruby>するときは、まわりの<ruby><rb>安全</rb><rp>（</rp><rt>あんぜん</rt><rp>）</rp></ruby>を<ruby><rb>確認</rb><rp>（</rp><rt>かくにん</rt><rp>）</rp></ruby>してから<ruby><rb>方向</rb><rp>（</rp><rt>ほうこう</rt><rp>）</rp></ruby><ruby><rb>指示器</rb><rp>（</rp><rt>しじき</rt><rp>）</rp></ruby>を<ruby><rb>出</rb><rp>（</rp><rt>だ</rt><rp>）</rp></ruby>し、タイミングを<ruby><rb>見計</rb><rp>（</rp><rt>みはか</rt><rp>）</rp></ruby>らって、まわりの<ruby><rb>交通</rb><rp>（</rp><rt>こうつう</rt><rp>）</rp></ruby>の<ruby><rb>流</rb><rp>（</rp><rt>なが</rt><rp>）</rp></ruby>れに<ruby><rb>乗</rb><rp>（</rp><rt>の</rt><rp>）</rp></ruby>るとよい。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>の<ruby><rb>運転</rb><rp>（</rp><rt>うんてん</rt><rp>）</rp></ruby>は、<ruby><rb>近</rb><rp>（</rp><rt>ちか</rt><rp>）</rp></ruby>くのものに<ruby><rb>視線</rb><rp>（</rp><rt>しせん</rt><rp>）</rp></ruby>が<ruby><rb>向</rb><rp>（</rp><rt>む</rt><rp>）</rp></ruby>けられがちになり、<ruby><rb>四輪車</rb><rp>（</rp><rt>よんりんしゃ</rt><rp>）</rp></ruby>の<ruby><rb>運転者</rb><rp>（</rp><rt>うんてんしゃ</rt><rp>）</rp></ruby>に<ruby><rb>比</rb><rp>（</rp><rt>くら</rt><rp>）</rp></ruby>べて<ruby><rb>左右</rb><rp>（</rp><rt>さゆう</rt><rp>）</rp></ruby><ruby><rb>方向</rb><rp>（</rp><rt>ほうこう</rt><rp>）</rp></ruby>や<ruby><rb>遠</rb><rp>（</rp><rt>とお</rt><rp>）</rp></ruby>くのものへの<ruby><rb>情報</rb><rp>（</rp><rt>じょうほう</rt><rp>）</rp></ruby>が<ruby><rb>少</rb><rp>（</rp><rt>すく</rt><rp>）</rp></ruby>なくなる<ruby><rb>傾向</rb><rp>（</rp><rt>けいこう</rt><rp>）</rp></ruby>がある。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>横断</rb><rp>（</rp><rt>おうだん</rt><rp>）</rp></ruby><ruby><rb>歩道</rb><rp>（</rp><rt>ほどう</rt><rp>）</rp></ruby>に<ruby><rb>横断</rb><rp>（</rp><rt>おうだん</rt><rp>）</rp></ruby>する<ruby><rb>人</rb><rp>（</rp><rt>ひと</rt><rp>）</rp></ruby>がいることが<ruby><rb>明</rb><rp>（</rp><rt>あき</rt><rp>）</rp></ruby>らかなときでも、<ruby><rb>横断</rb><rp>（</rp><rt>おうだん</rt><rp>）</rp></ruby><ruby><rb>歩行者</rb><rp>（</rp><rt>ほこうしゃ</rt><rp>）</rp></ruby>の<ruby><rb>妨害</rb><rp>（</rp><rt>ぼうがい</rt><rp>）</rp></ruby>にならない<ruby><rb>場合</rb><rp>（</rp><rt>ばあい</rt><rp>）</rp></ruby>には、<ruby><rb>速度</rb><rp>（</rp><rt>そくど</rt><rp>）</rp></ruby>を<ruby><rb>落</rb><rp>（</rp><rt>お</rt><rp>）</rp></ruby>として<ruby><rb>進</rb><rp>（</rp><rt>すす</rt><rp>）</rp></ruby>むことができる。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>自転車</rb><rp>（</rp><rt>じてんしゃ</rt><rp>）</rp></ruby><ruby><rb>横断</rb><rp>（</rp><rt>おうだん</rt><rp>）</rp></ruby><ruby><rb>帯</rb><rp>（</rp><rt>たい</rt><rp>）</rp></ruby>とその<ruby><rb>前後</rb><rp>（</rp><rt>ぜんご</rt><rp>）</rp></ruby>5メートル<ruby><rb>以内</rb><rp>（</rp><rt>いない</rt><rp>）</rp></ruby>の<ruby><rb>場所</rb><rp>（</rp><rt>ばしょ</rt><rp>）</rp></ruby>は、<ruby><rb>駐車</rb><rp>（</rp><rt>ちゅうしゃ</rt><rp>）</rp></ruby>も<ruby><rb>停車</rb><rp>（</rp><rt>ていしゃ</rt><rp>）</rp></ruby>も<ruby><rb>禁止</rb><rp>（</rp><rt>きんし</rt><rp>）</rp></ruby>されているが、<ruby><rb>原動機</rb><rp>（</rp><rt>げんどうき</rt><rp>）</rp></ruby><ruby><rb>付</rb><rp>（</rp><rt>つき</rt><rp>）</rp></ruby><ruby><rb>自転車</rb><rp>（</rp><rt>じてんしゃ</rt><rp>）</rp></ruby>と<ruby><rb>軽車両</rb><rp>（</rp><rt>けいしゃりょう</rt><rp>）</rp></ruby>なら<ruby><rb>駐車</rb><rp>（</rp><rt>ちゅうしゃ</rt><rp>）</rp></ruby>してもよい。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>を<ruby><rb>止</rb><rp>（</rp><rt>と</rt><rp>）</rp></ruby>めていて<ruby><rb>運転者</rb><rp>（</rp><rt>うんてんしゃ</rt><rp>）</rp></ruby>が<ruby><rb>運転席</rb><rp>（</rp><rt>うんてんせき</rt><rp>）</rp></ruby>にいる<ruby><rb>場合</rb><rp>（</rp><rt>ばあい</rt><rp>）</rp></ruby>は、<ruby><rb>継続的</rb><rp>（</rp><rt>けいぞくてき</rt><rp>）</rp></ruby>に<ruby><rb>停止</rb><rp>（</rp><rt>ていし</rt><rp>）</rp></ruby>していても<ruby><rb>駐車</rb><rp>（</rp><rt>ちゅうしゃ</rt><rp>）</rp></ruby>にはならない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>歩行者</rb><rp>（</rp><rt>ほこうしゃ</rt><rp>）</rp></ruby>のそばを<ruby><rb>通行</rb><rp>（</rp><rt>つうこう</rt><rp>）</rp></ruby>するときは、<ruby><rb>歩行者</rb><rp>（</rp><rt>ほこうしゃ</rt><rp>）</rp></ruby>との<ruby><rb>間</rb><rp>（</rp><rt>あいだ</rt><rp>）</rp></ruby>に<ruby><rb>十分</rb><rp>（</rp><rt>じゅうぶん</rt><rp>）</rp></ruby>な<ruby><rb>間隔</rb><rp>（</rp><rt>かんかく</rt><rp>）</rp></ruby>をあけるか、<ruby><rb>徐行</rb><rp>（</rp><rt>じょこう</rt><rp>）</rp></ruby>しなければならないが、<ruby><rb>歩行者</rb><rp>（</rp><rt>ほこうしゃ</rt><rp>）</rp></ruby>が<ruby><rb>路側帯</rb><rp>（</rp><rt>ろそくたい</rt><rp>）</rp></ruby>にいるときはその<ruby><rb>必要</rb><rp>（</rp><rt>ひつよう</rt><rp>）</rp></ruby>がない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>初心</rb><rp>（</rp><rt>しょしん</rt><rp>）</rp></ruby><ruby><rb>運転者</rb><rp>（</rp><rt>うんてんしゃ</rt><rp>）</rp></ruby>（<ruby><rb>普通</rb><rp>（</rp><rt>ふつう</rt><rp>）</rp></ruby><ruby><rb>免許</rb><rp>（</rp><rt>めんきょ</rt><rp>）</rp></ruby>や<ruby><rb>準中型免許</rb><rp>（</rp><rt>じゅんちゅうがためんきょ</rt><rp>）</rp></ruby>を<ruby><rb>受</rb><rp>（</rp><rt>う</rt><rp>）</rp></ruby>けてから1<ruby><rb>年</rb><rp>（</rp><rt>ねん</rt><rp>）</rp></ruby>を<ruby><rb>経過</rb><rp>（</rp><rt>けいか</rt><rp>）</rp></ruby>していない<ruby><rb>者</rb><rp>（</rp><rt>もの</rt><rp>）</rp></ruby>）は、<ruby><rb>運転</rb><rp>（</rp><rt>うんてん</rt><rp>）</rp></ruby>が<ruby><rb>未熟</rb><rp>（</rp><rt>みじゅく</rt><rp>）</rp></ruby>であるから<ruby><rb>高速道路</rb><rp>（</rp><rt>こうそくどうろ</rt><rp>）</rp></ruby>や<ruby><rb>自動車</rb><rp>（</rp><rt>じどうしゃ</rt><rp>）</rp></ruby><ruby><rb>専用</rb><rp>（</rp><rt>せんよう</rt><rp>）</rp></ruby><ruby><rb>道路</rb><rp>（</rp><rt>どうろ</rt><rp>）</rp></ruby>を<ruby><rb>通行</rb><rp>（</rp><rt>つうこう</rt><rp>）</rp></ruby>してはならない。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>時間</rb><rp>（</rp><rt>じかん</rt><rp>）</rp></ruby><ruby><rb>制限</rb><rp>（</rp><rt>せいげん</rt><rp>）</rp></ruby><ruby><rb>駐車</rb><rp>（</rp><rt>ちゅうしゃ</rt><rp>）</rp></ruby><ruby><rb>区間</rb><rp>（</rp><rt>くかん</rt><rp>）</rp></ruby>では、パーキング・メーターが<ruby><rb>車</rb><rp>（</rp><rt>くるま</rt><rp>）</rp></ruby>を<ruby><rb>感知</rb><rp>（</rp><rt>かんち</rt><rp>）</rp></ruby>したとき、またはパーキング・チケットの<ruby><rb>発給</rb><rp>（</rp><rt>はっきゅう</rt><rp>）</rp></ruby>を<ruby><rb>受</rb><rp>（</rp><rt>う</rt><rp>）</rp></ruby>けたときから、<ruby><rb>標識</rb><rp>（</rp><rt>ひょうしき</rt><rp>）</rp></ruby>に<ruby><rb>表示</rb><rp>（</rp><rt>ひょうじ</rt><rp>）</rp></ruby>されている<ruby><rb>時間</rb><rp>（</rp><rt>じかん</rt><rp>）</rp></ruby>をこえて<ruby><rb>駐車</rb><rp>（</rp><rt>ちゅうしゃ</rt><rp>）</rp></ruby>してはならない。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>でカーブを<ruby><rb>曲</rb><rp>（</rp><rt>ま</rt><rp>）</rp></ruby>がるときは、<ruby><rb>遠心力</rb><rp>（</rp><rt>えんしんりょく</rt><rp>）</rp></ruby>の<ruby><rb>影響</rb><rp>（</rp><rt>えいきょう</rt><rp>）</rp></ruby>をおさえて<ruby><rb>曲</rb><rp>（</rp><rt>ま</rt><rp>）</rp></ruby>がるようにし、<ruby><rb>両</rb><rp>（</rp><rt>りょう</rt><rp>）</rp></ruby>ひざをタンクに<ruby><rb>密着</rb><rp>（</rp><rt>みっちゃく</rt><rp>）</rp></ruby>させ、<ruby><rb>車体</rb><rp>（</rp><rt>しゃたい</rt><rp>）</rp></ruby>と<ruby><rb>体</rb><rp>（</rp><rt>からだ</rt><rp>）</rp></ruby>を<ruby><rb>傾</rb><rp>（</rp><rt>かたむ</rt><rp>）</rp></ruby>けて<ruby><rb>自然</rb><rp>（</rp><rt>しぜん</rt><rp>）</rp></ruby>に<ruby><rb>曲</rb><rp>（</rp><rt>ま</rt><rp>）</rp></ruby>がる。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>踏切</rb><rp>（</rp><rt>ふみきり</rt><rp>）</rp></ruby>では<ruby><rb>大</rb><rp>（</rp><rt>おお</rt><rp>）</rp></ruby>きな<ruby><rb>事故</rb><rp>（</rp><rt>じこ</rt><rp>）</rp></ruby>が<ruby><rb>起</rb><rp>（</rp><rt>お</rt><rp>）</rp></ruby>こりやすいので、<ruby><rb>安全</rb><rp>（</rp><rt>あんぜん</rt><rp>）</rp></ruby><ruby><rb>確認</rb><rp>（</rp><rt>かくにん</rt><rp>）</rp></ruby>のため、<ruby><rb>踏切</rb><rp>（</rp><rt>ふみきり</rt><rp>）</rp></ruby>の<ruby><rb>直前</rb><rp>（</rp><rt>ちょくぜん</rt><rp>）</rp></ruby>（<ruby><rb>停止線</rb><rp>（</rp><rt>ていしせん</rt><rp>）</rp></ruby>があるときは、<ruby><rb>停止線</rb><rp>（</rp><rt>ていしせん</rt><rp>）</rp></ruby>の<ruby><rb>直前</rb><rp>（</rp><rt>ちょくぜん</rt><rp>）</rp></ruby>）で<ruby><rb>一時</rb><rp>（</rp><rt>いちじ</rt><rp>）</rp></ruby><ruby><rb>停止</rb><rp>（</rp><rt>ていし</rt><rp>）</rp></ruby>しなければならない。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>運転席</rb><rp>（</rp><rt>うんてんせき</rt><rp>）</rp></ruby>に<ruby><rb>座</rb><rp>（</rp><rt>すわ</rt><rp>）</rp></ruby>ったときのシートの<ruby><rb>前後</rb><rp>（</rp><rt>ぜんご</rt><rp>）</rp></ruby>の<ruby><rb>位置</rb><rp>（</rp><rt>いち</rt><rp>）</rp></ruby>は、クラッチを<ruby><rb>踏</rb><rp>（</rp><rt>ふ</rt><rp>）</rp></ruby>み<ruby><rb>込</rb><rp>（</rp><rt>こ</rt><rp>）</rp></ruby>んだとき、ひざがわずかに<ruby><rb>曲</rb><rp>（</rp><rt>ま</rt><rp>）</rp></ruby>がる<ruby><rb>状態</rb><rp>（</rp><rt>じょうたい</rt><rp>）</rp></ruby>に<ruby><rb>合</rb><rp>（</rp><rt>あ</rt><rp>）</rp></ruby>わせるのがよい。</span>
+  </div>
+  <div class="t">
+    <span style="font-weight:normal;"><ruby><rb>交差点</rb><rp>（</rp><rt>こうさてん</rt><rp>）</rp></ruby>（<ruby><rb>環状交差点</rb><rp>（</rp><rt>かんじょうこうさてん</rt><rp>）</rp></ruby>を<ruby><rb>除</rb><rp>（</rp><rt>のぞ</rt><rp>）</rp></ruby>く）で<ruby><rb>右折</rb><rp>（</rp><rt>うせつ</rt><rp>）</rp></ruby>するときには、<ruby><rb>対向</rb><rp>（</rp><rt>たいこう</rt><rp>）</rp></ruby><ruby><rb>車線</rb><rp>（</rp><rt>しゃせん</rt><rp>）</rp></ruby>を<ruby><rb>直進</rb><rp>（</rp><rt>ちょくしん</rt><rp>）</rp></ruby>してくる<ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>の<ruby><rb>距離</rb><rp>（</rp><rt>きょり</rt><rp>）</rp></ruby>を<ruby><rb>見誤</rb><rp>（</rp><rt>みあやま</rt><rp>）</rp></ruby>ることがあるので<ruby><rb>注意</rb><rp>（</rp><rt>ちゅうい</rt><rp>）</rp></ruby>しなければならない。</span>
+  </div>
+  <div class="f">
+    <span style="font-weight:normal;"><ruby><rb>高速</rb><rp>（</rp><rt>こうそく</rt><rp>）</rp></ruby><ruby><rb>自動車</rb><rp>（</rp><rt>じどうしゃ</rt><rp>）</rp></ruby><ruby><rb>国道</rb><rp>（</rp><rt>こくどう</rt><rp>）</rp></ruby>で<ruby><rb>標識</rb><rp>（</rp><rt>ひょうしき</rt><rp>）</rp></ruby>などにより<ruby><rb>最高</rb><rp>（</rp><rt>さいこう</rt><rp>）</rp></ruby><ruby><rb>速度</rb><rp>（</rp><rt>そくど</rt><rp>）</rp></ruby>が<ruby><rb>制限</rb><rp>（</rp><rt>せいげん</rt><rp>）</rp></ruby>されていなかったので、<ruby><rb>大型</rb><rp>（</rp><rt>おおがた</rt><rp>）</rp></ruby><ruby><rb>自動</rb><rp>（</rp><rt>じどう</rt><rp>）</rp></ruby><ruby><rb>二輪車</rb><rp>（</rp><rt>にりんしゃ</rt><rp>）</rp></ruby>で<ruby><rb>時速</rb><rp>（</rp><rt>じそく</rt><rp>）</rp></ruby>120キロメートルで<ruby><rb>走行</rb><rp>（</rp><rt>そうこう</rt><rp>）</rp></ruby>した。</span>
+  </div>
+</body>
+</html>
